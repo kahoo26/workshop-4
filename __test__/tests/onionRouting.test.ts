@@ -302,6 +302,7 @@ describe("Onion Routing", () => {
         const nodes = await getNodeRegistry();
 
         for (let index = 0; index < 10; index++) {
+          console.log({nodes})
           const node = nodes.find((_n) => _n.nodeId === index);
           expect(node).not.toBeUndefined();
         }
